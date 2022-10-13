@@ -3,20 +3,37 @@
 <head> 
     <title>Contacts - ATUS</title>
     <meta charset='utf-8'> 
-    <link rel="stylesheet" href="css/style.css"> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="css/bootstrap.css"> 
     <meta name="description" content="Contact clubs and societies at ATU Sligo"> 
     <meta name="viewport" content="width=device-width,initial-scale=1"> 
 </head> 
 
 <body> 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
-            <li><a href="register.html">Register Clubs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">ATU Sligo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clubs.html">Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 <article>
 <h1>Welcome to ATUS Clubs & Societies</h1>
@@ -24,7 +41,14 @@
 
 <p>Here we have all of the information you need as a student for clubs and societies in ATUS<p> 
 </article>
-<footer>&copy; 2019 ATUS Clubs & Societies</footer>
-</body> 
 
+<footer class="bg-dark text-center text-white text-lg-start fixed-bottom">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        &copy; 2022 ATUS Clubs & Societies
+    </div>
+</footer>
+
+<script src="js/bootstrap.js"></script>
+
+</body> 
 </html> 
