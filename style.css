@@ -1,0 +1,162 @@
+ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background-color: #333; 
+    } 
+
+li { 
+    float: left; 
+    } 
+    
+li a { 
+    display: block; 
+    color: white;  
+    text-align: center; 
+    padding: 0.88rem 1rem;  
+    text-decoration: none; 
+    } 
+    
+li a:hover {  
+    background-color: #111; 
+    } 
+
+html, body { 
+    width: 960px; 
+    margin: 0 auto; 
+    padding: 0;
+    font-size: 100%; 
+    } 
+
+#full {
+    font-size: small;
+    color: red;
+} 
+
+article h1 { 
+    padding:0.31rem;   
+    border-left:0.31rem solid #333;      
+    } 
+
+.club_img {
+    float: left;
+    padding-right: 3.1rem;
+    padding-bottom: 0.63rem;
+} 
+
+article { 
+    padding:0.31rem; 
+    display:inline-block; 
+  } 
+  
+.club { 
+    width:18rem; 
+    vertical-align:top; 
+    box-sizing: border-box;
+  } 
+
+article p {
+     text-align: justify;
+     padding-right: 1.5rem;
+  }
+
+article:hover {
+    background-color: grey;
+  }
+
+article:hover button {
+    background-color: yellow;
+  }
+
+
+@media only screen and (min-width: 320px) {
+    body {
+      background-color: blue;
+    }
+    .club{
+        width:50%;
+    }
+    h1{
+      font-size: 200%;
+    }
+    .club_img{
+      width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 576px) {
+    body {
+      background-color: red;
+    }
+    .club{
+        width:33.5%;
+    }
+    h1{
+      font-size: 175%;
+    }
+    .club_img{
+      width: 90%;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: green;
+    }
+    .club{
+        width:26%;
+    }
+    h1{
+      font-size: 150%;
+    }
+    .club_img{
+      width: 75%;
+    }
+  }
+
+@media only screen and (min-width: 968px) {
+
+    body {
+      background-color: white;
+    }
+  }
+
+#hamnav {
+  width: 100%;
+  background: #000;
+}
+
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { background: #af0d0d; }
+
+#hamnav label, #hamburger { display: none; }
+
+@media screen and (max-width: 768px){
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+ 
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
