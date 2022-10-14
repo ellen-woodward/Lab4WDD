@@ -1,52 +1,115 @@
-<!DOCTYPE html lang="en"> 
+<!DOCTYPE html lang="en">
 
-<head> 
+<head>
     <title>Clubs & Societies - ATUS</title>
-    <meta charset='utf-8'> 
+    <meta charset='utf-8'>
     <!-- <link rel="stylesheet" href="css/style.css">  -->
-    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
     <meta name="description" content="Clubs and Societies hompage at ATU Sligo">
-    <meta name="viewport" content="width=device-width,initial-scale=1">  
-</head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<body> 
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">ATU Sligo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="clubs.html">Clubs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="register.html">Register Clubs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="index.html">ATU Sligo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-<h1>Welcome to ATUS Clubs & Societies</h1>
-<img src="images/clubandsoc.jpg" width="500">
+    <div
+    class="p-5 text-center bg-image"
+    style="background-image: url(images/clubandsoc.jpg); height: 400px; background-repeat: no-repeat;   background-size: cover;
+    background-position: center;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">ATU Sligo Clubs and Societies</h1>
+          <h4 class="mb-3">Home</h4>
+          <a class="btn btn-outline-light btn-lg" href="clubs.html" role="button"
+          >See all clubs</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>Here we have all of the information you need as a student for clubs and societies in ATUS<p> 
+  <br>
+    <p class="text-center fs-2">Here we have all of the information you need as a student for clubs and societies in ATUS<p>
 
-    <footer class="bg-dark text-center text-white text-lg-start fixed-bottom">
+        <div id="carouselExampleCaptions" class="carousel slide" style="width: 70%;" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/soccer.jpg" class="d-block w-100" alt="soccer">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Soccer Club</h5>
+                  <p>Come have some fun and keep fit!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/basketball.webp" class="d-block w-100" alt="basketball">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Basketball Club</h5>
+                  <p>Come have some fun and keep fit!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/cricket.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cricket Club</h5>
+                  <p>Come have some fun and keep fit!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <br>
+          <div class="alert alert-primary text-center" role="alert">
+            Don't see the club you want? Set one up <a href="register.html" class="alert-link">here</a>
+          </div>
+          <br>
+
+    <footer class="bg-dark text-center text-white text-lg-start">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             &copy; 2022 ATUS Clubs & Societies
         </div>
     </footer>
 
-<script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-</body> 
-</html> 
+</body>
+
+</html>
